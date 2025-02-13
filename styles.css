@@ -66,9 +66,30 @@ table {
     --Inter:"Inter" , italic;
 }
 
+/*----------Global Styles (small/first)----------*/
 
-H1, H2
-Kavoon
+html{
+    background-color: var(--Purple);
+    font-family: var(--Inter);
+}
+
+H1, H2{
+    color: var(--White);
+    font-family: var(--Kavoon);
+}
+.sticky{
+    font-size: 3em;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    background-color: var(--Yellow);
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 0 0 25px 25px;
+}
+h1{
+    font-size: 3em;
+}
 All other text
 Inter
 H1
