@@ -78,28 +78,293 @@ H1, H2{
     font-family: var(--Kavoon);
 }
 .sticky{
-    font-size: 3em;
+    font-size: 1.5em;
     top: 0px;
     right: 0px;
     position: fixed;
     background-color: var(--Yellow);
     text-decoration: none;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0 0 25px 25px;
 }
 h1{
     font-size: 3em;
 }
-All other text
-Inter
-H1
-3em
-NAV H2
-1.5em
-H2
-2em
-H3
-1.5em
-H4
-1.15em
-Colors
+.sticky a{
+    color: black;
+    font-family: var(--Inter);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+.sticky a:hover{
+    color: var(--White);
+}
+
+header{
+    text-align:center;
+}
+header h1{
+    padding: 3rem 3rem 3rem;
+    background-color: var(--Lavender);
+    z-index: 5;
+    border-radius: 0 0 25px 25px;
+}
+
+header p{
+    background-color: #D9526F;
+    position: relative;
+    border-radius: 0 0 25px 25px;
+    color: var(--White);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    z-index: -1;
+    padding: 1rem 6rem 1rem;
+    top: -10px;
+    
+}
+
+nav ul{
+    display: none;
+}
+nav ul a:hover{
+    color: #ffffff;
+}
+
+h2{
+    font-size: 2em;
+}
+h3{
+    color: #E9BB57;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+h4{
+    font-size: 1.5em;
+}
+
+.container div, .container1 div, .container2 div, .container3 div, .container0 div{
+    margin: 1rem;
+    background-color: #ffffff;
+    border-radius:  10px;
+    padding: 1rem;
+}
+
+section:nth-child(even){
+    background-color: #D9526F;
+}
+#us ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+}
+#us li{
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem 2rem;
+}
+section{
+    padding: 0.5rem;
+}
+#services div p{
+    line-height: 1.5;
+}
+#services div h4{
+    font-weight: bold;
+    color: var(--Purple);
+    margin: 1rem 1rem 1rem 1rem;
+}
+.personalized{
+    background-color: var(--Teal);
+}
+.flexible{
+    background-color: white;
+}
+.supportive{
+    background-color: #E9BB57;
+}
+.proven{
+    background-color: var(--Lavender);
+}
+#pricing h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#pricing table thead{
+    background-color: var(--Yellow);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#pricing table, th, td{
+    border: 3px solid var(--Yellow);
+    max-width: 300px;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: auto;
+    width: 80%;
+}
+#pricing table tbody{
+    background: #ffffff;
+    text-align: left;
+}
+#pricing table tbody th + th{
+    text-align: center;
+}
+#first{
+    padding:1rem;
+}
+#first div p{
+    color: #ffffff;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.button{
+    margin: auto;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 80%;
+
+}
+.button a{
+    color:#1E1E1E;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer{
+    background-color: var(--Lavender);
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 0 0 25px 25px;
+}
+footer p, footer a{
+    color: #ffffff;
+    padding: 2rem 2rem;
+    display: inline-block;
+}
+
+/*-----------Media Query Medium------------*/
+@media screen and (min-width: 620px){
+    #first ul{
+        gap: 1rem;
+        display: flex;
+    }
+    #first ul li{
+        padding: 4vh 3vw;
+        margin: auto;
+    }
+    #pricing table{
+        width: 80%;
+
+    }
+    #pricetable{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container0, .container1{
+        display: inline-grid;
+        grid-template-columns:  1fr 1fr;
+    
+    }
+
+    .container0 div:last-of-type{
+        grid-column: 1 / 3;
+    }
+    #first div{
+        display: flex;
+
+    }
+    #first p{
+    width:70%;
+    }
+    .button{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    }   
+    .button a{
+    margin: auto;
+    }
+    footer a, footer p{
+    padding: 2rem;
+    width: 10%;
+    }
+    #us ul{
+        display: flex;
+
+    }
+    #us ul li{
+        margin: auto;
+        padding: 5vh 3vw;
+    }
+}
+/*---------Media Query Large---------*/
+@media screen and (min-width:950px){
+    .sticky , .sticky a{
+        display: none;
+    }
+    nav ul{
+        background-color: #E9BB57;
+        padding: .5rem;
+        position: fixed;
+        display: flex;
+        font-size: 1rem;
+        right: 0px;
+        top: 0px;
+        text-decoration: none;
+        width: 600px;
+        border-radius: 0 0 25px 25px;
+    }
+    nav ul a{
+        color: #1E1E1E;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: var(--Inter);
+        text-decoration: none;
+        margin-right: 1.8rem;
+        margin-left: 1.8rem;
+    }
+    .container0, .container1, .container2, .container3{
+        display: block;
+    }
+    .boxes > div{
+        display: flex;
+    }
+    .Onone, .two, .three, .four{
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    .pricetable{
+        display: flex;
+
+    }
+    .grouptable{
+        margin: auto;
+
+    }
+    .table1, .table2, .table3, .table4{
+        display: block;
+    }
+    #first p{
+        width: 50%;
+        margin-right: 4rem;
+
+    }
+    .button{
+        margin-right: 5rem;
+        margin-left: 6rem;
+        margin-top:1rem;
+    }
+}
+/*----------Media query XL---------*/
+@media screen and (min-width: 1280px){
+
+    main , header{
+        margin: auto;
+        max-width: 1280px;
+    }
+    #pricing table{
+        width: 100%;
+    }
+}
